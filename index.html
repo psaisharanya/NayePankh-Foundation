@@ -1,22 +1,31 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Naye Pankh - Giving Wings To Dreams</title>
+  <meta name="description" content="Naye Pankh Foundation is a registered NGO delivering education, food, hygiene and animal welfare programs across India." />
+  <title>Naye Pankh Foundation | Giving Wings to Dreams</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header class="nav">
+  <div class="topbar">
+    <div class="container">
+      <div>Contact: contact@nayepankh.com | +91-8318500748</div>
+      <div>Follow: <a href="#">Instagram</a> <a href="#">Facebook</a></div>
+    </div>
+  </div>
+
+  <header class="nav" aria-label="Main navigation">
     <div class="container nav-inner">
       <div class="brand">
-        <img class="logo" src="assets/logo.png" alt="Naye Pankh" onerror="this.onerror=null;this.src='https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=512,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-01-31-at-9.40.45-pm-dWxpDb2pNbCaxERZ.jpeg'">
+        <img class="logo" src="assets/logo.avif" alt="Naye Pankh Foundation">
       </div>
-      <nav class="menu">
+      <nav class="menu" role="navigation" aria-label="Primary">
         <a href="about.html">About</a>
-        <a href="index.html#programs">Our Programs</a>
+        <a href="index.html#programs">Programs</a>
         <a href="index.html#impact">Impact</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#gallery">Gallery</a>
         <a class="donate" href="donate.html">Donate</a>
       </nav>
     </div>
@@ -24,145 +33,385 @@
 
   <section class="hero">
     <div class="hero-overlay"></div>
-    <div class="container hero-inner">
-      <h1>Giving Wings To Dreams</h1>
-      <p>Naye Pankh is dedicated to uplifting communities through education, health, food distribution, women hygiene and animal welfare initiatives.</p>
-      <div class="hero-ctas">
-        <a class="btn primary" href="donate.html">Donate Now</a>
-        <a class="btn" href="#volunteer">Become a Volunteer</a>
+    <div class="container hero-inner animate-up">
+      <div class="hero-copy">
+        <span class="eyebrow">Empowering communities across India</span>
+        <h1>Giving wings to every dream through education, health and relief.</h1>
+        <p>We are a registered NGO delivering measurable impact in child education, food distribution, women’s hygiene and animal welfare.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="donate.html">Donate Now</a>
+          <a class="btn" href="#volunteer">Volunteer</a>
+        </div>
       </div>
-      <ul class="stats">
-        <li><strong id="stat1">200K+</strong><span>Lives Impacted</span></li>
-        <li><strong id="stat2">500+</strong><span>Volunteers</span></li>
-        <li><strong id="stat3">50+</strong><span>Campaigns</span></li>
-        <li><strong id="stat4">10+</strong><span>Cities Reached</span></li>
-      </ul>
-    </div>
-  </section>
 
-  <section class="container trust-certs">
-    <div class="card">
-      <h3>Trust & Transparency</h3>
-      <div class="cert-grid">
-        <div class="cert-item">Government Registered NGO</div>
-        <div class="cert-item">80G Tax Exemption</div>
-        <div class="cert-item">12A Certified NGO</div>
-        <div class="cert-item">NGO Darpan Verified</div>
+      <div class="hero-stats-card">
+        <h3>Impact snapshot</h3>
+        <ul class="stats">
+          <li><strong id="stat1">65K</strong><span>Children reached</span></li>
+          <li><strong id="stat2">1,200+</strong><span>Volunteers</span></li>
+          <li><strong id="stat3">5,300+</strong><span>Meals served</span></li>
+          <li><strong id="stat4">8</strong><span>States covered</span></li>
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <section id="testimonials" class="container card">
-    <h2>Voices of Support</h2>
-    <div class="testimonials">
-      <blockquote>
-        "Naye Pankh's education support helped my daughter continue her studies." — Riya Sharma
-      </blockquote>
-      <blockquote>
-        "Their food drives reached our family when we needed help the most." — Mohammad Arif
-      </blockquote>
     </div>
   </section>
 
   <main class="container">
-    <section id="about" class="card">
-      <h2>About Us</h2>
-      <p>"Think global, Act local." Naye Pankh Foundation is a student-led NGO working across multiple cities to create sustainable change through education, health and food distribution.</p>
-      <div class="certs">
-        <div class="cert">Government Registered NGO</div>
-        <div class="cert">80G Tax Exemption</div>
-        <div class="cert">12A Certified NGO</div>
+    <section id="about" class="card about-section animate-up">
+      <div class="section-header">
+        <h2>About Naye Pankh</h2>
+        <p>We build sustainable change with student-led programs that support children, women and vulnerable communities.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Mission</h3>
+          <p>Empower underprivileged families with education, nutrition and dignity so every dream gets the chance to take flight.</p>
+        </div>
+        <div class="about-card">
+          <h3>Vision</h3>
+          <p>A compassionate India where every child learns, every family eats, and every community thrives.</p>
+        </div>
+        <div class="about-card">
+          <h3>Values</h3>
+          <p>Accountability, empathy and measurable impact guide every program and donation.</p>
+        </div>
       </div>
     </section>
 
-    <section id="programs" class="card programs">
-      <h2>Our Programs</h2>
+    <section id="programs" class="card programs animate-up">
+      <div class="section-header">
+        <h2>Our Programs</h2>
+        <p>High-impact campaigns across education, nutrition, hygiene and animal welfare.</p>
+      </div>
       <div class="grid">
         <article>
-          <img src="assets/img1.jpg" alt="Education">
-          <h3>Education Support</h3>
-          <p>Providing educational resources and support to underprivileged children.</p>
+          <img class="card-media" src="assets/img1.jpg" alt="Education Support">
+          <div class="card-body">
+            <h3>Education Support</h3>
+            <p>Study kits, scholarships and mentoring for children from low-income communities.</p>
+          </div>
         </article>
         <article>
-          <img src="assets/img2.jpg" alt="Food">
-          <h3>Food Distribution</h3>
-          <p>Regular food distribution to hungry people and needy families.</p>
+          <img class="card-media" src="assets/img2.jpg" alt="Food Distribution">
+          <div class="card-body">
+            <h3>Food Distribution</h3>
+            <p>Nutritious meals delivered to families during festivals, lockdowns and relief drives.</p>
+          </div>
         </article>
         <article>
-          <img src="assets/img3.jpg" alt="Women Hygiene">
-          <h3>Women Hygiene</h3>
-          <p>Promoting hygiene awareness and providing essential resources.</p>
+          <img class="card-media" src="assets/img3.jpg" alt="Women Hygiene">
+          <div class="card-body">
+            <h3>Women Hygiene</h3>
+            <p>Hygiene kits, health camps and menstrual education for girls and women.</p>
+          </div>
         </article>
         <article>
-          <img src="assets/img4.jpg" alt="Animal Welfare">
-          <h3>Animal Welfare</h3>
-          <p>Rescue, care and support for stray animals and their well-being.</p>
+          <img class="card-media" src="assets/img4.jpg" alt="Animal Welfare">
+          <div class="card-body">
+            <h3>Animal Welfare</h3>
+            <p>Rescue, medical care and rehabilitation for stray animals across rural communities.</p>
+          </div>
         </article>
       </div>
     </section>
 
-    <section id="impact" class="card impact">
-      <h2>Changing Lives, One Step at a Time</h2>
-      <div class="carousel" id="carousel">
-        <div class="slide active">
-          <img src="assets/impact1.jpg" alt="Impact 1">
-          <p><strong>Riya Sharma</strong> — Education support helped Riya continue her studies.</p>
+    <section id="impact" class="card impact animate-up">
+      <div class="section-header">
+        <h2>Impact Stories</h2>
+        <p>Real change happens when donors and volunteers come together.</p>
+      </div>
+      <div class="success-grid">
+        <div class="success-card">
+          <img src="assets/impact1.jpg" alt="Child reading books">
+          <h3>Books and classes</h3>
+          <p>120 children received complete school kits and support for the academic year.</p>
         </div>
-        <div class="slide">
-          <img src="assets/impact2.jpg" alt="Impact 2">
-          <p><strong>Mohammad Arif</strong> — Regular food support helped his family.</p>
+        <div class="success-card">
+          <img src="assets/impact2.jpg" alt="Meal distribution">
+          <h3>Nutrition for families</h3>
+          <p>5,300+ meals served through community kitchens and emergency relief camps.</p>
+        </div>
+        <div class="success-card">
+          <img src="assets/img3.jpg" alt="Hygiene program">
+          <h3>Women’s hygiene</h3>
+          <p>Hygiene kits and awareness sessions reached 15 communities.</p>
+        </div>
+      </div>
+      <div class="before-after-grid">
+        <div class="before-after-card before">
+          <h3>Before</h3>
+          <ul>
+            <li>Low school attendance</li>
+            <li>Unstable access to meals</li>
+            <li>Limited hygiene awareness</li>
+          </ul>
+        </div>
+        <div class="before-after-card after">
+          <h3>After</h3>
+          <ul>
+            <li>65K children reached</li>
+            <li>1,200+ volunteers activated</li>
+            <li>5,300+ meals served</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="donate" class="card donate">
-      <h2>Your Contribution Can Change Lives</h2>
-      <div class="donation-grid">
-        <div class="donation">
-          <h3>₹500</h3>
-          <p>Feed a Child</p>
-          <a class="btn" href="https://nayepankh.com/donate">Donate Now</a>
+    <section id="certificates" class="card trust-certs animate-up">
+      <div class="section-header">
+        <h2>Certificates & Compliance</h2>
+        <p>Verified registrations and certifications that back our NGO work with trusted authority.</p>
+      </div>
+      <div class="cert-grid certificate-grid">
+        <div class="certificate-card">
+          <img src="assets/certificate-society.png" alt="Society registration certificate">
+          <div class="certificate-card-info">
+            <h3>Government Registration</h3>
+            <p>Official NGO registration ensuring accountability and local support.</p>
+          </div>
         </div>
-        <div class="donation popular">
-          <h3>₹1,000</h3>
-          <p>Education Kit</p>
-          <a class="btn primary" href="https://nayepankh.com/donate">Donate Now</a>
+        <div class="certificate-card">
+          <img src="assets/certificate-80g.png" alt="80G Tax Exemption certificate">
+          <div class="certificate-card-info">
+            <h3>80G Tax Exemption</h3>
+            <p>Donations qualify for tax-deductible benefits under government rules.</p>
+          </div>
         </div>
-        <div class="donation">
-          <h3>Custom</h3>
-          <p>Choose any amount</p>
-          <a class="btn" href="https://nayepankh.com/donate">Donate Now</a>
+        <div class="certificate-card">
+          <img src="assets/certificate-12a.png" alt="12A registration certificate">
+          <div class="certificate-card-info">
+            <h3>12A Certified</h3>
+            <p>Registered as a charitable trust for lawful nonprofit fundraising.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="founder" class="card">
-      <h2>Our Leadership</h2>
-      <div class="founder-box">
-        <h3>Prashant Shukla</h3>
-        <p><em>Founder & President</em></p>
-        <blockquote>"If we all do something, then together there is no problem that we cannot solve!"</blockquote>
-        <p>Leading Naye Pankh with a vision to create sustainable change in underprivileged communities across India.</p>
+    <section class="card" id="gallery">
+      <div class="section-header animate-up">
+        <h2>Interactive Gallery</h2>
+        <p>Filter our recent field projects by theme and explore stories through images.</p>
+      </div>
+      <div class="gallery-filters animate-up" role="tablist">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="education" role="tab">Education</button>
+        <button class="filter-btn" data-filter="health" role="tab">Health</button>
+        <button class="filter-btn" data-filter="food" role="tab">Food</button>
+        <button class="filter-btn" data-filter="animal" role="tab">Animal Welfare</button>
+      </div>
+      <div class="gallery-grid animate-up">
+        <div class="gallery-card" data-category="education">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=963,fit=crop/YKbL494Mv8Ip3qgy/1-YD0yJ4erqEIN3ZWV.jpeg" alt="Children learning in a classroom">
+          <div class="gallery-caption">Children learning in a classroom</div>
+        </div>
+        <div class="gallery-card" data-category="health">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=386,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-02-15-at-9.17.30-pm-AVLPXr08jETq2nyv.jpeg" alt="Health and hygiene awareness session">
+          <div class="gallery-caption">Health and hygiene awareness session</div>
+        </div>
+        <div class="gallery-card" data-category="food">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-02-05-at-9.13.03-am-YBgL64ZLPPI03WXe.jpeg" alt="Food distribution campaign">
+          <div class="gallery-caption">Food distribution campaign</div>
+        </div>
+        <div class="gallery-card" data-category="animal">
+          <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/YKbL494Mv8Ip3qgy/whatsapp-image-2023-02-05-at-9.13.05-am-AzGEo7LOeZi2gn9v.jpeg" alt="Animal care outreach">
+          <div class="gallery-caption">Animal care outreach</div>
+        </div>
       </div>
     </section>
 
-    <section id="media" class="card">
-      <h2>Featured In</h2>
+    <section id="volunteer" class="card volunteer-card animate-up">
+      <div class="section-header">
+        <h2>Volunteer Experience</h2>
+        <p>Join a clear journey from application to field impact.</p>
+      </div>
+      <div class="volunteer-layout">
+        <div class="volunteer-info">
+          <div class="timeline">
+            <div class="timeline-step animate-up">
+              <span class="step-number">1</span>
+              <div>
+                <h3>Apply online</h3>
+                <p>Submit your details through our volunteer form.</p>
+              </div>
+            </div>
+            <div class="timeline-step animate-up">
+              <span class="step-number">2</span>
+              <div>
+                <h3>Attend orientation</h3>
+                <p>Learn about safety, community needs and program goals.</p>
+              </div>
+            </div>
+            <div class="timeline-step animate-up">
+              <span class="step-number">3</span>
+              <div>
+                <h3>Serve in the field</h3>
+                <p>Support education drives, food distribution and hygiene outreach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="application-form" action="mailto:contact@nayepankh.com" method="post" enctype="text/plain">
+          <h3>Apply to volunteer</h3>
+          <label for="volunteer-name">Full name</label>
+          <input id="volunteer-name" name="Name" type="text" required>
+
+          <label for="volunteer-email">Email address</label>
+          <input id="volunteer-email" name="Email" type="email" required>
+
+          <label for="volunteer-phone">Phone number</label>
+          <input id="volunteer-phone" name="Phone" type="tel" required>
+
+          <label for="volunteer-interest">Areas of interest</label>
+          <select id="volunteer-interest" name="Interest">
+            <option>Education support</option>
+            <option>Food distribution</option>
+            <option>Women hygiene</option>
+            <option>Animal welfare</option>
+          </select>
+
+          <label for="volunteer-message">Tell us why you want to help</label>
+          <textarea id="volunteer-message" name="Message" rows="4" required></textarea>
+
+          <button class="btn primary" type="submit">Send application</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="donate" class="card donate animate-up">
+      <div class="section-header">
+        <h2>Donation Transparency</h2>
+        <p>See how your support is used and what every contribution enables.</p>
+      </div>
+      <div class="donate-panel">
+        <div class="donate-main">
+          <p>Choose a donation tier and support education, health, nutrition or rescue projects.</p>
+          <div class="donate-tiers">
+            <div class="tier" data-amount="500">
+              <div class="tier-info">
+                <div class="tier-title">₹500</div>
+                <div class="tier-desc">One child meal kit for a week</div>
+              </div>
+            </div>
+            <div class="tier suggested" data-amount="1000">
+              <div class="tier-info">
+                <div class="tier-title">₹1,000</div>
+                <div class="tier-desc">School supplies for one student</div>
+              </div>
+            </div>
+            <div class="tier" data-amount="2500">
+              <div class="tier-info">
+                <div class="tier-title">₹2,500</div>
+                <div class="tier-desc">Hygiene kits for a village group</div>
+              </div>
+            </div>
+            <div class="tier" data-amount="5000">
+              <div class="tier-info">
+                <div class="tier-title">₹5,000</div>
+                <div class="tier-desc">Support one outreach program</div>
+              </div>
+            </div>
+          </div>
+          <div class="donate-action-row">
+            <a class="btn primary" href="donate.html">Donate Now</a>
+            <a class="btn" href="contact.html">Learn more</a>
+          </div>
+          <p class="donation-quote">Support is tracked for every initiative, and we publish program reports for accountability.</p>
+        </div>
+
+        <aside class="donate-sidebar">
+          <div class="donate-sidebar-inner">
+            <h3>Current progress</h3>
+            <div class="progress-info">
+              <span>Raised</span>
+              <strong id="raisedAmount">₹45,000</strong>
+            </div>
+            <div class="progress-info">
+              <span>Goal</span>
+              <strong id="goalAmount">₹2,00,000</strong>
+            </div>
+            <div class="progress-info">
+              <span>Progress</span>
+              <strong id="progressPercent">0%</strong>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-bar"><div id="progressBarInner" class="progress-bar-inner" style="width:0%"></div></div>
+            </div>
+            <div class="impact-metrics">
+              <div class="metric"><strong>7K+</strong><span>People helped</span></div>
+              <div class="metric"><strong>34</strong><span>Volunteers</span></div>
+              <div class="metric"><strong>4</strong><span>Projects</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="media" class="card media-section animate-up">
+      <div class="section-header">
+        <h2>Media & Awards</h2>
+        <p>Coverage, recognition and trust updates from our impact campaigns.</p>
+      </div>
       <div class="media-grid">
-        <div class="media-item">हिंदुस्तान</div>
-        <div class="media-item">आमजनता</div>
-        <div class="media-item">News18</div>
-        <div class="media-item">अमर उजाला</div>
+        <div class="media-badge"><img src="assets/impact1.jpg" alt="Hindustan"><div>Hindustan</div></div>
+        <div class="media-badge"><img src="assets/impact2.jpg" alt="Aam Janata"><div>Aam Janata</div></div>
+        <div class="media-badge"><img src="assets/img1.jpg" alt="News18"><div>News18</div></div>
+        <div class="media-badge"><img src="assets/img2.jpg" alt="Amar Ujala"><div>Amar Ujala</div></div>
+      </div>
+      <div class="awards-grid">
+        <div class="award-card">Community Impact Award</div>
+        <div class="award-card">Best NGO Initiative</div>
+        <div class="award-card">Media Recognition 2025</div>
       </div>
     </section>
 
+    <section id="reports" class="card reports-section animate-up">
+      <div class="section-header">
+        <h2>Annual Reports</h2>
+        <p>Audited reports and impact summaries.</p>
+      </div>
+      <div class="report-list">
+        <a class="report-card" href="assets/report-annual-2025.pdf" target="_blank">Annual Report 2025 <span>PDF</span></a>
+        <a class="report-card" href="assets/report-impact-2024.pdf" target="_blank">Impact Summary 2024 <span>PDF</span></a>
+      </div>
+    </section>
+
+    <section id="contact" class="card contact-section animate-up">
+      <div class="section-header">
+        <h2>Get Involved</h2>
+        <p>Contact us to donate, volunteer, partner or request program support in your community.</p>
+      </div>
+      <div class="contact-grid">
+        <div><strong>Email</strong><p>contact@nayepankh.com</p></div>
+        <div><strong>Phone</strong><p>+91-8318500748</p></div>
+        <div><strong>WhatsApp</strong><p>+91-8318500748</p></div>
+        <div><strong>Address</strong><p>Uttar Pradesh, India</p></div>
+      </div>
+    </section>
+      <div class="section-header">
+        <h2>Get Involved</h2>
+        <p>Contact us to donate, volunteer, partner or request program support in your community.</p>
+      </div>
+      <div class="contact-grid">
+        <div><strong>Email</strong><p>contact@nayepankh.com</p></div>
+        <div><strong>Phone</strong><p>+91-8318500748</p></div>
+        <div><strong>WhatsApp</strong><p>+91-8318500748</p></div>
+        <div><strong>Address</strong><p>Uttar Pradesh, India</p></div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
         <h4>Naye Pankh Foundation</h4>
-        <p>Contact: contact@nayepankh.com | +91-8318500748</p>
+        <p>Contact: contact@nayepankh.com | +91-8318500748 | WhatsApp: +91-8318500748</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
       </div>
       <div>
         <small>© 2026 Naye Pankh Foundation</small>
@@ -170,6 +419,8 @@
     </div>
   </footer>
 
+  <a class="sticky-whatsapp" href="https://wa.me/918318500748" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+  <a class="sticky-donate" href="donate.html" aria-label="Donate Now">Donate</a>
   <script src="js/main.js"></script>
 </body>
 </html>

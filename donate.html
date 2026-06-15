@@ -9,7 +9,9 @@
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <div class="brand">Naye Pankh</div>
+      <div class="brand">
+          <img class="logo" src="assets/logo.avif" alt="Naye Pankh Foundation">
+      </div>
       <nav class="menu">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -25,32 +27,40 @@
           <h1>Make a Difference Today</h1>
           <p>Your contribution gives food, education kits, hygiene supplies and hope. Choose an amount and see the direct impact.</p>
           <div class="donation-presets">
-            <button class="preset" data-amount="500">₹500<br><span>Feed a Child</span></button>
-            <button class="preset popular" data-amount="1000">₹1,000<br><span>Education Kit</span></button>
-            <button class="preset" data-amount="2500">₹2,500<br><span>Health Support</span></button>
-            <button class="preset" data-amount="5000">₹5,000<br><span>Women Support</span></button>
-          </div>
-          <div class="donation-custom">
-            <input id="custom-amt" type="number" placeholder="Enter custom amount" min="10">
-            <label><input id="monthly" type="checkbox"> Make this a monthly gift</label>
-          </div>
-          <div class="donate-actions">
-            <button id="payBtn" class="btn primary large">Donate Now</button>
-            <button id="learnMore" class="btn">How donations are used</button>
-          </div>
-        </div>
-        <aside class="donation-story">
-          <img src="assets/impact1.jpg" alt="Impact" />
-          <h4>Riya's Story</h4>
-          <p>Education support helped Riya continue her studies. Your gift can help another child like her.</p>
-        </aside>
-      </div>
-      <p style="margin-top:12px;color:var(--muted);font-size:13px">Note: This is a demo checkout. For production, create orders server-side and verify payment signatures.</p>
-    </section>
+            <section class="card">
+              <div class="donate-panel">
+                <div class="donate-main">
+                  <h1>Give Hope. See Real Impact.</h1>
+                  <p>We channel funds directly into programs that deliver food, education and health support. Choose a tier, read stories, and know exactly where your gift goes.</p>
 
-    <div id="donationModal" class="modal" aria-hidden="true">
-      <div class="modal-content">
-        <button class="modal-close" id="modalClose">×</button>
+                  <div class="donate-tiers">
+                    <div class="tier" data-amount="500"><div class="tier-info"><div class="tier-title">Feed a Child</div><div class="tier-desc">₹500 — meals for a week</div></div><div class="tier-amount">₹500</div></div>
+                    <div class="tier suggested" data-amount="1000"><div class="tier-info"><div class="tier-title">Education Kit</div><div class="tier-desc">₹1,000 — books & stationery</div></div><div class="tier-amount">₹1,000</div></div>
+                    <div class="tier" data-amount="2500"><div class="tier-info"><div class="tier-title">Health Support</div><div class="tier-desc">₹2,500 — hygiene & care</div></div><div class="tier-amount">₹2,500</div></div>
+                    <div class="tier" data-amount="5000"><div class="tier-info"><div class="tier-title">Sponsor A Class</div><div class="tier-desc">₹5,000 — supports an entire classroom</div></div><div class="tier-amount">₹5,000</div></div>
+                  </div>
+
+                  <div style="margin-top:12px"><button id="payBtn" class="btn primary large">Donate Now</button> <a class="btn" href="#impact">Read Impact Stories</a></div>
+
+                  <h3 style="margin-top:18px">Stories</h3>
+                  <div class="card" style="padding:12px;margin-top:8px">
+                    <strong>Riya's Story</strong>
+                    <p style="margin:8px 0">From irregular classes to steady study support — education transformed one child's future. Your ₹1,000 can repeat that for another child.</p>
+                  </div>
+                </div>
+
+                <aside class="donate-sidebar">
+                  <div class="donate-sidebar-inner">
+                    <h3>Donation Snapshot</h3>
+                    <div class="progress-info"> <div>Raised: <span id="raisedAmount">₹45,000</span></div> <div class="progress-percent" id="progressPercent">0%</div></div>
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="margin-top:6px"><div id="progressBarInner" class="progress-bar-inner" style="width:0%"></div></div>
+                    <div style="margin-top:12px;font-size:13px;color:var(--muted)">Want to give offline? Bank transfers and cheques accepted — contact us at contact@nayepankh.com</div>
+                    <div style="margin-top:12px"><a class="btn" href="contact.html">Contact for Offline Gifts</a></div>
+                  </div>
+                </aside>
+              </div>
+              <p style="margin-top:12px;color:var(--muted);font-size:13px">Note: This demo uses the public Razorpay script. For production integrate server-side order creation and signature verification.</p>
+            </section>
         <h3>You're donating</h3>
         <p id="modalAmount">Amount: ₹0</p>
         <p id="modalFreq">One-time</p>
