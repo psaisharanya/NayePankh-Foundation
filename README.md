@@ -2,6 +2,12 @@
 
 This is a lightweight static website scaffold modeled after https://nayepankh.com/. It includes a responsive hero, programs, impact carousel, testimonials, founder spotlight, media coverage, and donation section with Razorpay integration.
 
+## Live Site
+
+🌐 **Visit the live site:** https://6a2fbd6c8d16528b3ae17e5e--dashing-halva-29a097.netlify.app/
+
+Deployed on Netlify from the GitHub repository `psaisharanya/NayePankh-Foundation`.
+
 ## Run Locally
 
 From the project root:
