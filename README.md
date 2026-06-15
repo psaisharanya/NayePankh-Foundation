@@ -17,53 +17,6 @@ python -m http.server 8000
 # open http://localhost:8000 in your browser
 ```
 
-## First-Time Setup: Download Images
-
-Run the PowerShell script to download reference images into `assets/`:
-
-```powershell
-.\scripts\download_images.ps1
-```
-
-## Payment / Donate Feature
-
-The `donate.html` page contains a demo Razorpay Checkout integration. To enable real payments:
-
-1. Replace `REPLACE_WITH_RAZORPAY_KEY` in `donate.html` or `js/main.js` with your Razorpay test or live key.
-2. For production, create orders server-side and verify the payment signature on your server.
-
-## Deployment
-
-### GitHub Pages (Automatic CI/CD)
-
-1. Push this repository to GitHub (ensure branch is `main`).
-2. The GitHub Actions workflow in `.github/workflows/deploy-gh-pages.yml` automatically deploys to GitHub Pages on push.
-3. Enable GitHub Pages in your repo settings if needed.
-
-### Netlify (Easy Manual)
-
-1. Connect your GitHub repo to Netlify.
-2. Set publish directory to `/` (root).
-3. Deploy — done!
-
-### Create ZIP for Submission
-
-```powershell
-.\scripts\create_deploy_zip.ps1
-```
-
-This creates `naye-pankh-site.zip` in the project root.
-
-## Assignment Submission
-
-1. Zip the project: `.\scripts\create_deploy_zip.ps1` → `naye-pankh-site.zip`
-2. Include deployment link (if deployed to GitHub Pages or Netlify).
-3. In your submission notes, mention:
-   - Project: Naye Pankh NGO website (HTML/CSS/JS static site)
-   - Features: Multi-page (home, about, contact, donate), donation demo (Razorpay), responsive design, testimonials, founder section
-   - Run locally: `python -m http.server 8000`
-   - Deploy: Push to GitHub or connect repo to Netlify
-
 ## Project Structure
 
 ```
