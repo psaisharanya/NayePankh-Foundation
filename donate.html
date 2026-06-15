@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donate — Naye Pankh</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">Naye Pankh</div>
+      <nav class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="donate-hero">
+        <div>
+          <h1>Make a Difference Today</h1>
+          <p>Your contribution gives food, education kits, hygiene supplies and hope. Choose an amount and see the direct impact.</p>
+          <div class="donation-presets">
+            <button class="preset" data-amount="500">₹500<br><span>Feed a Child</span></button>
+            <button class="preset popular" data-amount="1000">₹1,000<br><span>Education Kit</span></button>
+            <button class="preset" data-amount="2500">₹2,500<br><span>Health Support</span></button>
+            <button class="preset" data-amount="5000">₹5,000<br><span>Women Support</span></button>
+          </div>
+          <div class="donation-custom">
+            <input id="custom-amt" type="number" placeholder="Enter custom amount" min="10">
+            <label><input id="monthly" type="checkbox"> Make this a monthly gift</label>
+          </div>
+          <div class="donate-actions">
+            <button id="payBtn" class="btn primary large">Donate Now</button>
+            <button id="learnMore" class="btn">How donations are used</button>
+          </div>
+        </div>
+        <aside class="donation-story">
+          <img src="assets/impact1.jpg" alt="Impact" />
+          <h4>Riya's Story</h4>
+          <p>Education support helped Riya continue her studies. Your gift can help another child like her.</p>
+        </aside>
+      </div>
+      <p style="margin-top:12px;color:var(--muted);font-size:13px">Note: This is a demo checkout. For production, create orders server-side and verify payment signatures.</p>
+    </section>
+
+    <div id="donationModal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" id="modalClose">×</button>
+        <h3>You're donating</h3>
+        <p id="modalAmount">Amount: ₹0</p>
+        <p id="modalFreq">One-time</p>
+        <button id="modalPay" class="btn primary">Proceed to Pay</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    // Replace this with your Razorpay key (test or live). For demo leave as placeholder and replace before testing.
+    const RAZORPAY_KEY = 'REPLACE_WITH_RAZORPAY_KEY';
+    document.getElementById('payBtn').addEventListener('click',()=>{
+      let amount = document.querySelector('input[name="amount"]:checked')?.value;
+      const custom = document.getElementById('custom-amt').value;
+      if(custom) amount = custom;
+      if(!amount){ alert('Choose or enter an amount'); return; }
+      const amountPaise = parseInt(amount,10)*100;
+
+      const options = {
+        key: RAZORPAY_KEY,
+        amount: amountPaise,
+        currency: 'INR',
+        name: 'Naye Pankh Foundation',
+        description: 'Donation',
+        prefill: { name: '', email: '' },
+        handler: function (response){
+          alert('Payment completed. Razorpay payment id: ' + response.razorpay_payment_id);
+        },
+        modal: {ondismiss: function(){ console.log('Checkout closed'); }}
+      };
+      const rzp = new Razorpay(options);
+      rzp.open();
+    });
+  </script>
+
+</body>
+</html>
